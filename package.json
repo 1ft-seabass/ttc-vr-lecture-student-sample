@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:01": "node 01-firststep/server.js"
+    "start:01": "node 01-firststep/server.js",
+    "start:02": "node 02-rotating-cube/server.js"
   },
   "keywords": [],
   "author": "",

@@ -2,11 +2,11 @@ const path = require('path');
 const express = require('express');
 
 const app = express();
-const PORT = 5000;
-const HOST = '0.0.0.0';
+const port = 5000;
+const host = '0.0.0.0';
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(PORT, HOST, () => {
-  console.log(`01-firststep server listening on http://${HOST}:${PORT}`);
+app.listen(port, host, () => {
+  console.log(`02-rotating-cube server listening on http://${host}:${port}`);
 });
