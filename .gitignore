@@ -141,3 +141,15 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# 04-sensor-dummy-flow: Node-REDのuserDirがランタイムで生成するファイル
+# (settings.js/flows.jsonは authored なので対象外)
+04-sensor-dummy-flow/node-red-dir/node_modules/
+04-sensor-dummy-flow/node-red-dir/lib/
+04-sensor-dummy-flow/node-red-dir/package.json
+04-sensor-dummy-flow/node-red-dir/package-lock.json
+04-sensor-dummy-flow/node-red-dir/.config.*.json*
+04-sensor-dummy-flow/node-red-dir/.flows.json.backup
+04-sensor-dummy-flow/node-red-dir/flows_cred.json
+04-sensor-dummy-flow/node-red-dir/*.db
+04-sensor-dummy-flow/node-red-dir/*.db-journal
