@@ -153,3 +153,15 @@ vite.config.ts.timestamp-*
 04-sensor-dummy-flow/node-red-dir/flows_cred.json
 04-sensor-dummy-flow/node-red-dir/*.db
 04-sensor-dummy-flow/node-red-dir/*.db-journal
+
+# 05-sensor-vr-view: Node-REDのuserDirがランタイムで生成するファイル
+# (settings.js/flows.jsonは authored なので対象外)
+05-sensor-vr-view/node-red-dir/node_modules/
+05-sensor-vr-view/node-red-dir/lib/
+05-sensor-vr-view/node-red-dir/package.json
+05-sensor-vr-view/node-red-dir/package-lock.json
+05-sensor-vr-view/node-red-dir/.config.*.json*
+05-sensor-vr-view/node-red-dir/.flows.json.backup
+05-sensor-vr-view/node-red-dir/flows_cred.json
+05-sensor-vr-view/node-red-dir/*.db
+05-sensor-vr-view/node-red-dir/*.db-journal
