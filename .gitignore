@@ -165,3 +165,15 @@ vite.config.ts.timestamp-*
 05-sensor-vr-view/node-red-dir/flows_cred.json
 05-sensor-vr-view/node-red-dir/*.db
 05-sensor-vr-view/node-red-dir/*.db-journal
+
+# 06-passthrough-tap-cube: Node-REDのuserDirがランタイムで生成するファイル
+# (settings.js/flows.jsonは authored なので対象外)
+06-passthrough-tap-cube/node-red-dir/node_modules/
+06-passthrough-tap-cube/node-red-dir/lib/
+06-passthrough-tap-cube/node-red-dir/package.json
+06-passthrough-tap-cube/node-red-dir/package-lock.json
+06-passthrough-tap-cube/node-red-dir/.config.*.json*
+06-passthrough-tap-cube/node-red-dir/.flows.json.backup
+06-passthrough-tap-cube/node-red-dir/flows_cred.json
+06-passthrough-tap-cube/node-red-dir/*.db
+06-passthrough-tap-cube/node-red-dir/*.db-journal
