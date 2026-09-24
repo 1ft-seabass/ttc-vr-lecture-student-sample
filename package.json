@@ -10,7 +10,8 @@
     "start:03": "node 03-room-model/server.js",
     "node-red:04": "npx node-red -p 5000 -u 04-sensor-dummy-flow/node-red-dir",
     "node-red:05": "npx node-red -p 5000 -u 05-sensor-vr-view/node-red-dir",
-    "node-red:06": "npx node-red -p 5000 -u 06-passthrough-tap-cube/node-red-dir"
+    "node-red:06": "npx node-red -p 5000 -u 06-passthrough-tap-cube/node-red-dir",
+    "node-red:07": "npx node-red -p 5000 -u 07-passthrough-device-control/node-red-dir"
   },
   "keywords": [],
   "author": "",

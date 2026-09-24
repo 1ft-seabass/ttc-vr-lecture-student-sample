@@ -177,3 +177,15 @@ vite.config.ts.timestamp-*
 06-passthrough-tap-cube/node-red-dir/flows_cred.json
 06-passthrough-tap-cube/node-red-dir/*.db
 06-passthrough-tap-cube/node-red-dir/*.db-journal
+
+# 07-passthrough-device-control: Node-REDのuserDirがランタイムで生成するファイル
+# (settings.js/flows.jsonは authored なので対象外)
+07-passthrough-device-control/node-red-dir/node_modules/
+07-passthrough-device-control/node-red-dir/lib/
+07-passthrough-device-control/node-red-dir/package.json
+07-passthrough-device-control/node-red-dir/package-lock.json
+07-passthrough-device-control/node-red-dir/.config.*.json*
+07-passthrough-device-control/node-red-dir/.flows.json.backup
+07-passthrough-device-control/node-red-dir/flows_cred.json
+07-passthrough-device-control/node-red-dir/*.db
+07-passthrough-device-control/node-red-dir/*.db-journal
