@@ -61,8 +61,10 @@ const createScene = () => {
     fixture.material = fixtureMaterial;
     return fixture;
   };
-  createCeilingLightFixture(-2);
-  createCeilingLightFixture(2);
+  const lightFixtures = [
+    createCeilingLightFixture(-2),
+    createCeilingLightFixture(2),
+  ];
 
   // WebXR の有効化
   scene.createDefaultXRExperienceAsync({ floorMeshes: [room] });
@@ -86,6 +88,20 @@ const createScene = () => {
         if (mesh.parent === null) {
           mesh.parent = roomModelRoot;
         }
+        // OBJ側の面の巻き順に関わらず室内側から見えるようにする
+        // (CADエクスポートしたOBJは片面ポリゴンのことが多いため)。
+        if (mesh.material) {
+          mesh.material.backFaceCulling = false;
+        }
+      });
+
+      // 読み込みに成功したら、上のBoxの部屋と発光Boxは非表示にする
+      // (2つの部屋がほぼ同じ空間に重なり、壁がちらつくため)。
+      // roomはXRのfloorMeshes(テレポート床判定)に使っているため、
+      // 削除はせずisVisibleのみfalseにする。
+      room.isVisible = false;
+      lightFixtures.forEach((fixture) => {
+        fixture.isVisible = false;
       });
 
       // 読み込んだモデルのサイズを調べる(バウンディングボックス)。
